@@ -1,4 +1,4 @@
-package com.invillia.acme.domain;
+package com.invillia.acme.domain.order;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

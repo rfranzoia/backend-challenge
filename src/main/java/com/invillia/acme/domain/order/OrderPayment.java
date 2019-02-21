@@ -1,4 +1,4 @@
-package com.invillia.acme.domain;
+package com.invillia.acme.domain.order;
 
 import java.time.ZonedDateTime;
 

@@ -1,13 +1,12 @@
 package com.invillia.acme.repository;
 
-import java.time.ZonedDateTime;
 import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.invillia.acme.domain.Order;
-import com.invillia.acme.domain.OrderStatus;
-import com.invillia.acme.domain.Store;
+import com.invillia.acme.domain.order.Order;
+import com.invillia.acme.domain.order.OrderStatus;
+import com.invillia.acme.domain.store.Store;
 
 /**
  * Database Access Object for driver table.
@@ -19,10 +18,6 @@ public interface OrderRepository extends CrudRepository<Order, Long> {
     
     List<Order> findByOrderStatus(OrderStatus orderStatus);
     
-    List<Order> findByDateCreatedBetween(ZonedDateTime startDate, ZonedDateTime endDate);
+    List<Order> findByOrderStatusAndStore(OrderStatus orderStatus, Store store);
     
-    List<Order> findByOrderStatusAndDateCreatedBetween(OrderStatus orderStatus, ZonedDateTime startDate, ZonedDateTime endDate);
-    
-    List<Order> findByPaymentDateBetween(ZonedDateTime startDate, ZonedDateTime endDate);
-
 }

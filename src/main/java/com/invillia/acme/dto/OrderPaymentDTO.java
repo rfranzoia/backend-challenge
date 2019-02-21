@@ -5,7 +5,7 @@ import javax.validation.constraints.NotNull;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
-import com.invillia.acme.domain.OrderPaymentStatus;
+import com.invillia.acme.domain.order.OrderPaymentStatus;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public class OrderPaymentDTO {

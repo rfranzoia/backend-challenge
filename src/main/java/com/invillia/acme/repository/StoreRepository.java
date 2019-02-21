@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.data.repository.CrudRepository;
 
-import com.invillia.acme.domain.Store;
+import com.invillia.acme.domain.store.Store;
 
 /**
  * Database Access Object for driver table.

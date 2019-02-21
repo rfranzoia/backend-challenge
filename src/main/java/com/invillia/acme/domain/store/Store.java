@@ -1,4 +1,4 @@
-package com.invillia.acme.domain;
+package com.invillia.acme.domain.store;
 
 import java.time.ZonedDateTime;
 
