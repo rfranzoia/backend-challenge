@@ -33,6 +33,9 @@ public class OrderItem {
     @Column(nullable = false)
     @NotNull(message = "Quantity cannot be null!")
     private Integer quantity;
+    
+    @Column
+    private Boolean deleted = false;
 
     public Long getId() {
 	return id;
@@ -74,4 +77,12 @@ public class OrderItem {
 	this.quantity = quantity;
     }
 
+    public Boolean getDeleted() {
+        return deleted;
+    }
+
+    public void setDeleted(Boolean deleted) {
+        this.deleted = deleted;
+    }
+    
 }
