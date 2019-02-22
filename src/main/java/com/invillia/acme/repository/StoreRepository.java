@@ -12,6 +12,6 @@ import com.invillia.acme.domain.store.Store;
  */
 public interface StoreRepository extends CrudRepository<Store, Long> {
 
-    List<Store> findByName(String name);
+    List<Store> findByNameLike(String name);
 
 }
