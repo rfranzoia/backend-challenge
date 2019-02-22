@@ -1,0 +1,10 @@
+version: '3'
+services: 
+  invillia-test:
+    image: invillia-test
+    networks:
+      - invillia-test-network-2
+      
+networks:
+  invillia-test-network-2:
+    driver: bridge
