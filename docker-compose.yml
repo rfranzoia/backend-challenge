@@ -1,10 +1,10 @@
 version: '3'
 services: 
-  invillia-test:
-    image: invillia-test
+  acme-test:
+    image: acme-test
     networks:
-      - invillia-test-network-2
+      - acme-test-network-2
       
 networks:
-  invillia-test-network-2:
+  acme-test-network-2:
     driver: bridge
